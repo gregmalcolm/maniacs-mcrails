@@ -1,11 +1,7 @@
 module McRails
   class EnvProxy
-    def to_s
-      ENV['RAILS_ENV'] || 'development'
-    end
-
     def inspect
-      "\"#{to_s}\""
+      ENV['RAILS_ENV'] || 'development'
     end
   end
 
