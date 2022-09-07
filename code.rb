@@ -1,5 +1,5 @@
 module McRails
   def self.env
-    "development"
+    ENV['RAILS_ENV'] || 'development'
   end
 end
