@@ -1,5 +1,8 @@
 module McRails
   class EnvProxy
+    def method_missing(name)
+      puts "Ghost method: #{name}"
+    end
   end
 
   def self.env
