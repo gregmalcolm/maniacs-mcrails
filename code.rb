@@ -1,11 +1,12 @@
 module McRails
   class EnvProxy
-    def inspect
+    def to_s
       ENV['RAILS_ENV'] || 'development'
     end
 
-    def method_missing(name)
-      puts "Ghost method: #{name}"
+    def inspect
+      # surround in quotes
+      %Q["#{to_s}"]
     end
   end
 
