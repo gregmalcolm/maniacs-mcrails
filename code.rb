@@ -1,9 +1,11 @@
 module McRails
   class EnvProxy
-    def method_missing(name)
-      return "Ghost Method" if name.end_with?('?')
+    def to_s
+      ENV['RAILS_ENV'] || 'development'
+    end
 
-      super
+    def inspect
+      ENV['RAILS_ENV'] || 'development'
     end
   end
 
