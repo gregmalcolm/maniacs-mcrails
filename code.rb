@@ -5,7 +5,7 @@ module McRails
     end
 
     def inspect
-      "\"#{(ENV['RAILS_ENV'] || 'development')}\""
+      "\"#{to_s}\""
     end
   end
 
