@@ -1,3 +1,4 @@
 #!/usr/bin/env zsh
 
-git checkout 20
+#git checkout 20
+git checkout 10
