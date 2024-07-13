@@ -1,7 +1,7 @@
 IRB.conf[:HISTORY_FILE]='../tmp/irb_history'
 
 def reload!
-  load './code.rb'
+  load './mcrails.rb'
 end
 
 def r
