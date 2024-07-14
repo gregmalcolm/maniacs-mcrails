@@ -1,7 +1,7 @@
 module McRails
   class EnvProxy
     def to_s
-      ENV['RAILS_ENV'] || 'development'
+      ENV['MCRAILS_ENV'] || 'development'
     end
   end
 
