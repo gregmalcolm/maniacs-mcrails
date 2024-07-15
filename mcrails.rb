@@ -13,8 +13,9 @@ module McRails
     end
 
     def method_missing(name)
-      return name
-      # return "Ghost Method" if name.end_with?('?')
+      return 'Ghost Method! Brr'
+      # return name
+      # return name if name.end_with?('?')
 
       super
     end
