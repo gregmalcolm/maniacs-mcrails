@@ -1,3 +1,7 @@
+#
+# New method for looking up the environment
+#
+
 module McRails
   class EnvProxy
     def to_s
@@ -10,3 +14,6 @@ module McRails
     proxy
   end
 end
+
+# McRails.env
+# McRails.env.to_s
