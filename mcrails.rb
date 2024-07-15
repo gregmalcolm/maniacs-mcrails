@@ -1,5 +1,5 @@
 #
-# Ghost methods!
+# Ghost methods
 #
 
 module McRails
