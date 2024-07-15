@@ -1,3 +1,7 @@
+#
+# Setting up an Env Proxy class
+#
+
 module McRails
   class EnvProxy
   end
@@ -5,7 +9,8 @@ module McRails
   def self.env
     #ENV['MCRAILS_ENV'] || 'development'
 
-    proxy = EnvProxy.new
-    proxy
+    EnvProxy.new
   end
 end
+
+# McRails.env
