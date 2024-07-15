@@ -1,5 +1,5 @@
 #
-# Back to displaying the environment
+# EnvProxy can also display environment
 #
 
 module McRails
@@ -15,7 +15,11 @@ module McRails
   end
 
   def self.env
-    proxy = EnvProxy.new
-    proxy
+    # Deprected
+    McRails::EnvProxy.new.to_s
   end
 end
+
+# McRails.env
+# McRails::EnvProxy.to_s
+# McRails::EnvProxy
