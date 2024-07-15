@@ -9,8 +9,8 @@ module McRails
     end
 
     def inspect
-      to_s
-      #%Q["#{to_s}"]
+      #to_s
+      %Q["#{to_s}"]
     end
   end
 
