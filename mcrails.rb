@@ -1,3 +1,7 @@
+#
+# Back to displaying the environment
+#
+
 module McRails
   class EnvProxy
     def to_s
@@ -5,8 +9,8 @@ module McRails
     end
 
     def inspect
-      # surround in quotes
-      %Q["#{to_s}"]
+      to_s
+      #%Q["#{to_s}"]
     end
   end
 
