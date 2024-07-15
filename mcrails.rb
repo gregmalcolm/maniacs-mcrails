@@ -1,5 +1,5 @@
 #
-# New method for looking up the environment
+# Refactor to look up environment in EnvProxy
 #
 
 module McRails
@@ -10,10 +10,12 @@ module McRails
   end
 
   def self.env
-    proxy = EnvProxy.new
-    proxy
+    # Deprected
+    #ENV['MCRAILS_ENV'] || 'development'
+    McRails::EnvProxy.new.to_s
   end
 end
 
 # McRails.env
-# McRails.env.to_s
+# McRails::EnvProxy
+# McRails::EnvProxy.to_s
