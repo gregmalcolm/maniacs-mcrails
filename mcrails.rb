@@ -7,9 +7,7 @@ module McRails
   end
 
   def self.env
-    #ENV['MCRAILS_ENV'] || 'development'
-
-    EnvProxy.new
+    ENV['MCRAILS_ENV'] || 'development'
   end
 end
 
