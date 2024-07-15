@@ -1,3 +1,7 @@
+#
+# Ghost methods!
+#
+
 module McRails
   class EnvProxy
     def to_s
@@ -5,15 +9,14 @@ module McRails
     end
 
     def inspect
-      # surround in quotes
       %Q["#{to_s}"]
     end
 
-    def method_missing(name)
-      return "Ghost Method" if name.end_with?('?')
+    # def method_missing(name)
+    #   return "Ghost Method" if name.end_with?('?')
 
-      super
-    end
+    #   super
+    # end
   end
 
   def self.env
