@@ -17,5 +17,4 @@ module McRails
 end
 
 # McRails.env
-# McRails::EnvProxy
-# McRails::EnvProxy.to_s
+# McRails::EnvProxy.new.to_s
