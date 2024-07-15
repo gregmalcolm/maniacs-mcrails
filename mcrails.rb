@@ -7,8 +7,10 @@ module McRails
   end
 
   def self.env
+    # Deprected
     ENV['MCRAILS_ENV'] || 'development'
   end
 end
 
 # McRails.env
+# McRails::EnvProxy
