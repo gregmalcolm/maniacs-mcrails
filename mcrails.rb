@@ -18,3 +18,5 @@ end
 
 # McRails.env
 # McRails::EnvProxy.new.to_s
+
+# McRails::EnvProxy.new #inspect
