@@ -1,5 +1,5 @@
 #
-# Ghost methods
+# Direct enquiries to ghost methods
 #
 
 module McRails
@@ -12,15 +12,19 @@ module McRails
       %Q["#{to_s}"]
     end
 
-    # def method_missing(name)
-    #   return "Ghost Method" if name.end_with?('?')
+    def method_missing(name)
+      return "Ghost Method" if name.end_with?('?')
 
-    #   super
-    # end
+      super
+    end
   end
 
   def self.env
-    proxy = EnvProxy.new
-    proxy
+    # Deprected
+    McRails::EnvProxy.new.to_s
   end
 end
+
+# McRails::EnvProxy.new.development?
+# McRails::EnvProxy.new.testing?
+# McRails::EnvProxy.new.microwave_water
