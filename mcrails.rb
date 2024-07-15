@@ -1,5 +1,5 @@
 #
-# Direct enquiries to ghost methods
+# Do you beleive in ghost methods?
 #
 
 module McRails
@@ -13,7 +13,8 @@ module McRails
     end
 
     def method_missing(name)
-      return "Ghost Method" if name.end_with?('?')
+      return name
+      # return "Ghost Method" if name.end_with?('?')
 
       super
     end
@@ -27,4 +28,5 @@ end
 
 # McRails::EnvProxy.new.development?
 # McRails::EnvProxy.new.testing?
+# McRails::EnvProxy.new.bueller?
 # McRails::EnvProxy.new.microwave_water
